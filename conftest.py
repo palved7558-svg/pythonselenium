@@ -18,25 +18,20 @@ def setup():
 
 @pytest.fixture
 def login(setup):
-    """Fixture to create LoginPage instance"""
     return LoginPage(setup)
 
 @pytest.fixture
 def function(setup):
-    """Fixture to create Functions instance"""
     return Functions(setup)
 
 @pytest.fixture
 def demo(setup):
-    """Fixture to create Demodata instance"""
     return Demodata(setup)
 
 @pytest.fixture
 def shop(setup):
-    """Fixture to create Demodata instance"""
     return ShopPage(setup)
 
 @pytest.fixture
 def basket(setup):
-    """Fixture to create Demodata instance"""
     return BasketPage(setup)
